@@ -3,7 +3,7 @@ let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
 
-const screen = document.querySelector('.screen');
+const display = document.querySelector('.display');
 
 function buttonclick(value){
     if(isNaN(value)){
@@ -11,12 +11,12 @@ function buttonclick(value){
     }else{
         handleNumber(value);
     }
-    screen.innerText = buffer;
+    display.innerText = buffer;
 }
 
 function handleSymbol(symbol){
     switch(symbol){
-        case 'C' :
+        case 'c' :
             buffer = '0';
             runningTotal = 0;
             break;
@@ -82,6 +82,7 @@ function handleNumber(numberString){
     }else{
         buffer += numberString;
     }
+}
 
 function init(){
     document.querySelector('.calc-buttons').
