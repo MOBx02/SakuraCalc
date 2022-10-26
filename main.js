@@ -1,4 +1,4 @@
-//- The Start of a journey 
+// The Start of a journey 
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
@@ -35,7 +35,7 @@ function handleSymbol(symbol){
         if(buffer.length ===1){
             buffer = '0';
         }else{
-            buffer = buffer.substring(0, buffer.length - 1);
+            buffer = buffer.substring(0, buffer.length -1);
         }
         break;
 
